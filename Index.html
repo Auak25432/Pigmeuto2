@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pet Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pet-container">
+        <h1>Meu Pet Virtual</h1>
+        <div class="pet-customization">
+            <label for="pet-select">Escolha o Pet:</label>
+            <select id="pet-select" onchange="changePet()">
+                <option value="dog">🐶 Cachorro</option>
+                <option value="cat">🐱 Gato</option>
+            </select>
+        </div>
+        <img id="pet-img" src="" alt="Pet">
+        <div class="stats">
+            <p>Fome: <span id="hunger">100</span></p>
+            <p>Felicidade: <span id="happiness">100</span></p>
+            <p>Energia: <span id="energy">100</span></p>
+        </div>
+        <div class="actions">
+            <button onclick="feedPet()">🍖 Alimentar</button>
+            <button onclick="playPet()">🎾 Brincar</button>
+            <button onclick="restPet()">💤 Descansar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
